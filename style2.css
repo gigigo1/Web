@@ -1,0 +1,84 @@
+:root {
+  --clr-beige: #fad9d9;
+  --clr-black: black;
+}
+
+body {
+  background-image: url(https://static.wixstatic.com/media/c837a6_18d3744d30574331b1b7079dc4aed05f~mv2.jpg/v1/fill/w_961,h_923,al_c,q_85,enc_auto/c837a6_18d3744d30574331b1b7079dc4aed05f~mv2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  z-index: 4;
+  position: fixed;
+}
+
+.sonja-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 12px;
+  position: fixed;
+  left: 20px;
+}
+
+.menu-btn {
+  all: unset;
+  font-size: 12px;
+  position: fixed;
+  margin-right: 40px;
+  cursor: pointer;
+
+  color: var(--clr-black);
+  z-index: 2;
+  right: 0;
+}
+
+footer {
+  cursor: pointer;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.cards {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: beige;
+  border-radius: 8px;
+  overflow: hidden;
+  height: fit-content;
+  animation: 1s 1 normal slide-up;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.253);
+  max-width: 500px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 26px 20px rgba(0, 0, 0, 0.074);
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(500px) rotate(45deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+  }
+}
