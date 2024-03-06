@@ -203,6 +203,7 @@ footer {
     height: 100%;
     padding: 20px;
     padding-top: 150px;
+    min-height: 0px;
   }
 
   footer {
@@ -230,6 +231,7 @@ footer {
   }
   .rosa {
     max-height: 0px;
+    min-height: 0px;
   }
 
   .menu-btn2 {
