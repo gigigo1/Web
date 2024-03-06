@@ -47,6 +47,7 @@ header {
   flex-grow: 1;
   height: 100vh;
   background-repeat: no-repeat;
+  min-height: 900px;
 }
 
 .img {
@@ -74,6 +75,7 @@ header {
   /* align-items: center;
   justify-content: center;
   text-align: center; */
+  min-height: 900px;
 }
 
 .sonja-btn2 {
